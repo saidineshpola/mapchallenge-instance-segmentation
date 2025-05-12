@@ -53,6 +53,7 @@ python tools/test.py ${CONFIG_FILE from trainng} ${CHECKPOINT_FILE}  [--show] [-
 | **[MaskDINO](https://github.com/saidineshpola/MaskDINO-mapchallenge/tree/main/assets/logs/maskdino-v2-full-run-1xH100-maskdino_R50_bs16_50ep_4s_dowsample1_2048.log)**     | **0.584**| **0.902**   | **0.615**   | **0.367**  | **0.691** | **0.929** | **0.680**| **0.957**    | **0.750**   |
 
 <br>
+
 ### MapChallenge results at >= @0.50 IOU
 
 | Model            | segm mAP@50 | segm mAR@50 |
