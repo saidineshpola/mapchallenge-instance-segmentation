@@ -38,7 +38,7 @@ bash train.sh
 | Model            | segm mAP | segm mAP@50 | segm mAP@75 | segm mAP_s | segm mAP_m | segm mAP_l | segm mAR | segm mAR@50 | segm mAR@75 |
 |------------------|----------|-------------|-------------|------------|------------|------------|----------|-------------|-------------|
 | [SwinS-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/mask2former_swin-s-p4-w7-224_8xb2-lsj-50e_coco.log) | 0.380    | 0.721       | 0.382       | 0.152      | 0.495      | 0.692      | 0.504    | 0.879       | 0.509       |
-| [SwinL-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/SWIN-L.log) | 0.3080   | 0.7260      | 0.2360      | 0.1710     | 0.4400     | 0.1310     | 0.453    | 0.855       | 0.464       |
+| [SwinL-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/mask2former_swin-L_8xb32-24k_coco.log) | 0.406   | 0.695      | 0.427      | 0.202     | 0.521     | 0.624     | 0.529    | 0.845       | 0.569       |
 | [RTMdet-M](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/rtmdet-ins_m_8xb32-300e_satellite.log) | 0.403    | 0.726       | 0.452       | 0.186      | 0.523      | 0.737      | 0.527    | 0.888       | 0.586       |
 | [RTMdet-X](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/rtmdet-ins_X_8xb16-300e_satellite.log) | 0.418    | 0.743       | 0.472       | 0.194      | 0.536      | 0.769      | 0.529    | 0.897       | 0.586       |
 | [QueryInst-r50](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/queryinst_r50_fpn_ms-3x_coco.log) | 0.400   | 0.711      | 0.437      | 0.188     | 0.517     | 0.657     | 0.553    | 0.905       | 0.595       |
@@ -51,12 +51,13 @@ bash train.sh
 | Model            | segm mAP@50 | segm mAR@50 |
 |------------------|-------------|-------------|
 | [SwinS-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/mask2former_swin-s-p4-w7-224_8xb2-lsj-50e_coco.log) | 0.721       | 0.879       |
-| [SwinL-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/SWIN-L.log) | 0.7260      | 0.855       |
+| [SwinL-Mask2former](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/mask2former_swin-L_8xb32-24k_coco.log) | 0.695      | 0.845       |
 | [RTMdet-M](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/rtmdet-ins_m_8xb32-300e_satellite.log) | 0.726       | 0.888       |
 | [RTMdet-X](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/rtmdet-ins_X_8xb16-300e_satellite.log) | 0.743       | 0.897       |
 | [QueryInst-r50](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/queryinst_r50_fpn_ms-3x_coco.log) | 0.711       | 0.905       |
 | [QueryInst-r101](https://github.com/saidineshpola/MaskDINO-mapchallenge/blob/main/assets/logs/queryinst_r101_fpn_300_proposals_crop_mstrain_3x_coco.log) | 0.689       | 0.914       |
 | **[MaskDINO](https://github.com/saidineshpola/MaskDINO-mapchallenge/tree/main/assets/logs/maskdino-v2-full-run-1xH100-maskdino_R50_bs16_50ep_4s_dowsample1_2048.log)**     | **0.902**   | **0.957**   |
+
 
 **Note:**
 - **mAP@50/mAR@50** refers to average precision/recall at 0.50 and **mAP@75/mAR@75** refers to average precision/recall at 0.75 IOU
