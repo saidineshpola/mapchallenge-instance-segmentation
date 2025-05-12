@@ -28,11 +28,18 @@ You can find and edit experiment configurations in the `projects/mapchallenge` f
 - Dataset settings
 - Training parameters
 
-### Experiment Script
+### Experiment Training Script
+
 ```bash
 # Run the experiments script
 bash train.sh
 ```
+
+### Test
+```bash
+python tools/test.py ${CONFIG_FILE from trainng} ${CHECKPOINT_FILE}  [--show] [--show-dir ${SHOW_DIR}]
+```
+
 ## MapChallenge Instance Segmentation Results
 
 | Model            | segm mAP | segm mAP@50 | segm mAP@75 | segm mAP_s | segm mAP_m | segm mAP_l | segm mAR | segm mAR@50 | segm mAR@75 |
